@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ticket_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="ticket">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 class="mt-2">Helpdesk Ticket</h2>
+                        <table class="table table-sm table-condensed mt-3">
+                            <tr>
+                                <td width="25%"><strong>Subject</strong></td>
+                                <td><span t-field="ticket.name"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Status</strong></td>
+                                <td><span t-field="ticket.state"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Priority</strong></td>
+                                <td><span t-field="ticket.priority"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Team</strong></td>
+                                <td><span t-field="ticket.team_id"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stage</strong></td>
+                                <td><span t-field="ticket.stage_id"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Assigned To</strong></td>
+                                <td><span t-field="ticket.user_id"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Customer</strong></td>
+                                <td><span t-field="ticket.partner_id"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Product to Repair</strong></td>
+                                <td><span t-field="ticket.product_id"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lot / Serial</strong></td>
+                                <td><span t-field="ticket.lot_id"/></td>
+                            </tr>
+                        </table>
+
+                        <t t-if="ticket.repair_id">
+                            <h3 class="mt-4">Repair Order</h3>
+                            <table class="table table-sm table-condensed">
+                                <tr>
+                                    <td width="25%"><strong>Reference</strong></td>
+                                    <td><span t-field="ticket.repair_id.name"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Status</strong></td>
+                                    <td><span t-field="ticket.repair_id.state"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Product</strong></td>
+                                    <td><span t-field="ticket.repair_id.product_id"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Scheduled Date</strong></td>
+                                    <td><span t-field="ticket.repair_id.schedule_date"/></td>
+                                </tr>
+                            </table>
+                        </t>
+
+                        <t t-if="ticket.description">
+                            <h3 class="mt-4">Description</h3>
+                            <div t-field="ticket.description"/>
+                        </t>
+
+                        <t t-if="ticket.access_token">
+                            <h3 class="mt-4">Track your repair</h3>
+                            <img t-att-src="'/report/barcode/QR/%s' % ticket._get_tracking_url()"
+                                 style="width:130px;height:130px;margin:8px 0;"/>
+                            <p class="text-muted">Scan the QR code to track your repair status.</p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

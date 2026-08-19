@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Privilege: بيظهر في تبويب صلاحيات الوصول في نموذج المستخدم -->
+    <record model="res.groups.privilege" id="res_groups_privilege_helpdesk">
+        <field name="name">Helpdesk</field>
+        <field name="sequence">10</field>
+        <field name="category_id" ref="base.module_category_services"/>
+    </record>
+
+    <record id="group_helpdesk_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="sequence">10</field>
+        <field name="privilege_id" ref="flousflow_helpdesk.res_groups_privilege_helpdesk"/>
+        <field name="implied_ids" eval="[Command.link(ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_helpdesk_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="sequence">20</field>
+        <field name="privilege_id" ref="flousflow_helpdesk.res_groups_privilege_helpdesk"/>
+        <field name="implied_ids" eval="[Command.link(ref('flousflow_helpdesk.group_helpdesk_user'))]"/>
+    </record>
+
+    <!-- Record rules: عزل متعدد الشركات (قواعد GLOBAL زي نمط repair) -->
+    <record model="ir.rule" id="flousflow_helpdesk_ticket_company_rule">
+        <field name="name">Helpdesk Ticket: Multi-Company</field>
+        <field name="model_id" ref="model_flousflow_helpdesk_ticket"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record model="ir.rule" id="flousflow_helpdesk_team_company_rule">
+        <field name="name">Helpdesk Team: Multi-Company</field>
+        <field name="model_id" ref="model_flousflow_helpdesk_team"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <!-- كل المستخدمين الداخليين (بما فيهم الأدمن) ياخدوا صلاحية Helpdesk User تلقائيًا -->
+    <data noupdate="1">
+        <record model="res.groups" id="base.group_user">
+            <field name="implied_ids" eval="[(4, ref('flousflow_helpdesk.group_helpdesk_user'))]"/>
+        </record>
+    </data>
+</odoo>

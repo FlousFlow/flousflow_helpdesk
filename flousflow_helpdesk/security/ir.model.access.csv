@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_helpdesk_tag_user,helpdesk.tag.user,model_flousflow_helpdesk_tag,group_helpdesk_user,1,0,0,0
+access_helpdesk_tag_manager,helpdesk.tag.manager,model_flousflow_helpdesk_tag,group_helpdesk_manager,1,1,1,1
+access_helpdesk_stage_user,helpdesk.stage.user,model_flousflow_helpdesk_stage,group_helpdesk_user,1,0,0,0
+access_helpdesk_stage_manager,helpdesk.stage.manager,model_flousflow_helpdesk_stage,group_helpdesk_manager,1,1,1,1
+access_helpdesk_team_user,helpdesk.team.user,model_flousflow_helpdesk_team,group_helpdesk_user,1,0,0,0
+access_helpdesk_team_manager,helpdesk.team.manager,model_flousflow_helpdesk_team,group_helpdesk_manager,1,1,1,1
+access_helpdesk_ticket_user,helpdesk.ticket.user,model_flousflow_helpdesk_ticket,group_helpdesk_user,1,1,1,0
+access_helpdesk_ticket_manager,helpdesk.ticket.manager,model_flousflow_helpdesk_ticket,group_helpdesk_manager,1,1,1,1
+access_helpdesk_create_repair_wizard_user,helpdesk.create.repair.wizard.user,model_flousflow_helpdesk_create_repair_wizard,group_helpdesk_user,1,1,1,0
+access_helpdesk_create_repair_wizard_manager,helpdesk.create.repair.wizard.manager,model_flousflow_helpdesk_create_repair_wizard,group_helpdesk_manager,1,1,1,1
