@@ -24,6 +24,7 @@ Features:
     'depends': ['base', 'mail', 'product', 'stock', 'repair'],
     'images': [
         'static/description/icon.png',
+        'static/description/banner.png',
         'static/description/screenshot_kanban.png',
         'static/description/screenshot_ticket.png',
     ],
