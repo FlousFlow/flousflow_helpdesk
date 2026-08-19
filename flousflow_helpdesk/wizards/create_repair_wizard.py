@@ -6,12 +6,15 @@ class HelpdeskCreateRepairWizard(models.TransientModel):
     _description = 'Create Repair Order Wizard'
 
     ticket_id = fields.Many2one(
-        'flousflow.helpdesk.ticket', string=_('Ticket'), required=True)
+        'flousflow.helpdesk.ticket', string=_('Ticket'), required=True,
+        help=_('Ticket this repair order is created from.'))
     partner_id = fields.Many2one(
-        'res.partner', string=_('Customer'), required=True)
+        'res.partner', string=_('Customer'), required=True,
+        help=_('Customer for the repair order.'))
     product_id = fields.Many2one(
         'product.product', string=_('Product to Repair'), required=True,
-        domain="[('type', 'in', ['consu', 'product'])]")
+        domain="[('type', 'in', ['consu', 'product'])]",
+        help=_('Product to repair.'))
 
     def action_create_repair(self):
         self.ensure_one()

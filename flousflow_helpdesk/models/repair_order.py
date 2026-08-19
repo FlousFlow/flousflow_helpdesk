@@ -7,7 +7,8 @@ class RepairOrder(models.Model):
 
     helpdesk_ticket_id = fields.Many2one(
         'flousflow.helpdesk.ticket', string=_('Helpdesk Ticket'),
-        readonly=True, tracking=True)
+        readonly=True, tracking=True,
+        help=_('Helpdesk ticket that created this repair order.'))
 
     def _get_state_display(self):
         self.ensure_one()

@@ -46,4 +46,5 @@ Features:
     'application': True,
     'license': 'LGPL-3',
     'author': 'Flous Flow',
+    'website': 'https://flousflow.com',
 }
