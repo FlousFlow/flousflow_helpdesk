@@ -22,6 +22,11 @@ Features:
 * Chatter and activities on tickets
 """,
     'depends': ['base', 'mail', 'product', 'stock', 'repair'],
+    'images': [
+        'static/description/icon.png',
+        'static/description/screenshot_kanban.png',
+        'static/description/screenshot_ticket.png',
+    ],
     'data': [
         'security/helpdesk_security.xml',
         'security/ir.model.access.csv',

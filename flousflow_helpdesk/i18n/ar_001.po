@@ -1,0 +1,781 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_helpdesk
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-19 21:58+0000\n"
+"PO-Revision-Date: 2026-08-20 00:00+0000\n"
+"Last-Translator: Flous Flow <support@flousflow.com>\n"
+"Language-Team: Arabic\n"
+"Language: ar_001\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: flousflow_helpdesk
+#: model:ir.actions.report,print_report_name:flousflow_helpdesk.helpdesk_ticket_report
+msgid "('Helpdesk Ticket - %s' % (object.name))"
+msgstr "('تذكرة مكتب المساعدة - %s' % (object.name))"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid "<span class=\"label\">Product</span>"
+msgstr "<span class=\"label\">المنتج</span>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid ""
+"<span class=\"label\">Repair Order</span>\n"
+"                            <span class=\"value\">Not created yet</span>"
+msgstr ""
+"<span class=\"label\">أمر الإصلاح</span>\n"
+"                            <span class=\"value\">لم يُنشأ بعد</span>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid "<span class=\"label\">Repair Reference</span>"
+msgstr "<span class=\"label\">مرجع الإصلاح</span>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid "<span class=\"label\">Repair Status</span>"
+msgstr "<span class=\"label\">حالة الإصلاح</span>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid "<span class=\"label\">Scheduled Date</span>"
+msgstr "<span class=\"label\">الموعد المحدد</span>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid "<span class=\"label\">Ticket Status</span>"
+msgstr "<span class=\"label\">حالة التذكرة</span>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid "<span class=\"label\">Ticket</span>"
+msgstr "<span class=\"label\">التذكرة</span>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Assigned To</strong>"
+msgstr "<strong>مُسند إلى</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Customer</strong>"
+msgstr "<strong>العميل</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Lot / Serial</strong>"
+msgstr "<strong>الدفعة / الرقم التسلسلي</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Priority</strong>"
+msgstr "<strong>الأولوية</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Product to Repair</strong>"
+msgstr "<strong>المنتج to Repair</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Product</strong>"
+msgstr "<strong>المنتج</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Reference</strong>"
+msgstr "<strong>المرجع</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Scheduled Date</strong>"
+msgstr "<strong>الموعد المحدد</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Stage</strong>"
+msgstr "<strong>المرحلة</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Status</strong>"
+msgstr "<strong>الحالة</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Subject</strong>"
+msgstr "<strong>الموضوع</strong>"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "<strong>Team</strong>"
+msgstr "<strong>الفريق</strong>"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__active
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "تزيين استثناء النشاط"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__user_id
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "Assigned To"
+msgstr "مُسند إلى"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_create_repair_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__state__cancelled
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "Cancelled"
+msgstr "ملغاة"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_stage.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__is_close
+msgid "Closing Stage"
+msgstr "مرحلة الإغلاق"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_tag.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__color
+msgid "Color"
+msgstr "اللون"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_team.py:0
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__company_id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: flousflow_helpdesk
+#: model:ir.ui.menu,name:flousflow_helpdesk.menu_helpdesk_config
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_create_repair_wizard_view_form
+msgid "Create"
+msgstr "إنشاء"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Create Repair"
+msgstr "إنشاء إصلاح"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_create_repair_wizard_view_form
+msgid "Create Repair Order"
+msgstr "إنشاء أمر إصلاح"
+
+#. module: flousflow_helpdesk
+#: model:ir.model,name:flousflow_helpdesk.model_flousflow_helpdesk_create_repair_wizard
+msgid "Create Repair Order Wizard"
+msgstr "مساعد إنشاء أمر الإصلاح"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.actions.act_window,help:flousflow_helpdesk.helpdesk_ticket_action
+msgid ""
+"Create and manage support tickets. Use the\n"
+"            \"Create Repair\" button to link a repair order."
+msgstr "إنشاء وإدارة تذاكر الدعم. استخدم زر \"إنشاء إصلاح\" لربط أمر إصلاح."
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__create_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__create_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__create_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__create_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__create_uid
+msgid "Created by"
+msgstr "أُنشئ بواسطة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__create_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__create_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__create_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__create_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__create_date
+msgid "Created on"
+msgstr "أُنشئ في"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: code:addons/flousflow_helpdesk/wizards/create_repair_wizard.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__partner_id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__partner_id
+msgid "Customer"
+msgstr "العميل"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__description
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "Description"
+msgstr "الوصف"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__display_name
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__display_name
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__display_name
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__display_name
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__display_name
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_repair_order__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__state__done
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "Done"
+msgstr "تم"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_stage.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__fold
+msgid "Folded in Kanban"
+msgstr "مطوي في الكانبان"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (شركاء)"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: flousflow_helpdesk
+#: model:ir.ui.menu,name:flousflow_helpdesk.menu_helpdesk_root
+#: model:res.groups.privilege,name:flousflow_helpdesk.res_groups_privilege_helpdesk
+msgid "Helpdesk"
+msgstr "مكتب المساعدة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model,name:flousflow_helpdesk.model_flousflow_helpdesk_stage
+msgid "Helpdesk Stage"
+msgstr "مرحلة مكتب المساعدة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model,name:flousflow_helpdesk.model_flousflow_helpdesk_tag
+msgid "Helpdesk Tag"
+msgstr "وسم مكتب المساعدة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model,name:flousflow_helpdesk.model_flousflow_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "فريق مكتب المساعدة"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/repair_order.py:0
+#: model:ir.actions.report,name:flousflow_helpdesk.helpdesk_ticket_report
+#: model:ir.model,name:flousflow_helpdesk.model_flousflow_helpdesk_ticket
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_repair_order__helpdesk_ticket_id
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.view_repair_order_form_inherit_helpdesk
+msgid "Helpdesk Ticket"
+msgstr "تذكرة مكتب المساعدة"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__priority__2
+msgid "High"
+msgstr "مرتفعة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_repair_order__id
+msgid "ID"
+msgstr "المعرّف"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة تشير إلى نشاط استثنائي."
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، تتطلب الرسائل الجديدة انتباهك."
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_has_error
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، توجد رسائل بها خطأ في التسليم."
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__state__in_progress
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__write_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__write_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__write_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__write_uid
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__write_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__write_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__write_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__write_date
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__lot_id
+msgid "Lot/Serial"
+msgstr "الدفعة/الرقم التسلسلي"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__priority__0
+msgid "Low"
+msgstr "منخفضة"
+
+#. module: flousflow_helpdesk
+#: model:res.groups,name:flousflow_helpdesk.group_helpdesk_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Mark Done"
+msgstr "تحديد كمكتمل"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_team_view_form
+msgid "Members"
+msgstr "الأعضاء"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ تسليم الرسالة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "مهلة نشاطي"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "My Tickets"
+msgstr "تذاكري"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_stage.py:0
+#: code:addons/flousflow_helpdesk/models/helpdesk_tag.py:0
+#: code:addons/flousflow_helpdesk/models/helpdesk_team.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__name
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_tag__name
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__state__draft
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "New"
+msgstr "جديد"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم للنشاط التالي"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "مهلة النشاط التالي"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__priority__1
+msgid "Normal"
+msgstr "عادي"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل ذات خطأ التسليم"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__priority
+msgid "Priority"
+msgstr "الأولوية"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: code:addons/flousflow_helpdesk/wizards/create_repair_wizard.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__product_id
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__product_id
+msgid "Product to Repair"
+msgstr "المنتج المطلوب إصلاحه"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Repair"
+msgstr "الإصلاح"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: code:addons/flousflow_helpdesk/wizards/create_repair_wizard.py:0
+#: model:ir.model,name:flousflow_helpdesk.model_repair_order
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__repair_id
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "Repair Order"
+msgstr "أمر الإصلاح"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_tracking_page
+msgid "Repair Status"
+msgstr "حالة الإصلاح"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ تسليم الرسائل القصيرة"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "Scan the QR code to track your repair status."
+msgstr "امسح رمز QR لمتابعة حالة الإصلاح."
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_stage.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__stage_id
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_stage_view_form
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "Stage"
+msgstr "المرحلة"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_team.py:0
+#: model:ir.actions.act_window,name:flousflow_helpdesk.helpdesk_stage_action
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__stage_ids
+#: model:ir.ui.menu,name:flousflow_helpdesk.menu_helpdesk_stages
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_team_view_form
+msgid "Stages"
+msgstr "المراحل"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Start"
+msgstr "بدء"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تجاوز تاريخ الاستحقاق\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: أنشطة مستقبلية."
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__name
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Subject"
+msgstr "الموضوع"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_tag_view_form
+msgid "Tag"
+msgstr "الوسم"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.actions.act_window,name:flousflow_helpdesk.helpdesk_tag_action
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__tag_ids
+#: model:ir.ui.menu,name:flousflow_helpdesk.menu_helpdesk_tags
+msgid "Tags"
+msgstr "الوسوم"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__team_id
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_team_view_form
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "Team"
+msgstr "الفريق"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_team.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_team__user_ids
+msgid "Team Members"
+msgstr "أعضاء الفريق"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_stage.py:0
+#: model:ir.actions.act_window,name:flousflow_helpdesk.helpdesk_team_action
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_stage__team_ids
+#: model:ir.ui.menu,name:flousflow_helpdesk.menu_helpdesk_teams
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_stage_view_form
+msgid "Teams"
+msgstr "الفرق"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/repair_order.py:0
+msgid "This repair order is not linked to a ticket."
+msgstr "أمر الإصلاح هذا غير مرتبط بتذكرة."
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+msgid "This ticket has no repair order yet."
+msgstr "هذه التذكرة ليس لها أمر إصلاح بعد."
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/wizards/create_repair_wizard.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_create_repair_wizard__ticket_id
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Ticket"
+msgstr "التذكرة"
+
+#. module: flousflow_helpdesk
+#: model:ir.actions.act_window,name:flousflow_helpdesk.helpdesk_ticket_action
+#: model:ir.ui.menu,name:flousflow_helpdesk.menu_helpdesk_tickets
+msgid "Tickets"
+msgstr "التذاكر"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.ticket_report
+msgid "Track your repair"
+msgstr "تتبع الإصلاح الخاص بك"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_form
+msgid "Tracking Link"
+msgstr "رابط التتبع"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__access_token
+msgid "Tracking Token"
+msgstr "رمز التتبع"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.helpdesk_ticket_view_search
+msgid "Unassigned"
+msgstr "غير مسند"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model.fields.selection,name:flousflow_helpdesk.selection__flousflow_helpdesk_ticket__priority__3
+msgid "Urgent"
+msgstr "عاجل"
+
+#. module: flousflow_helpdesk
+#: model:res.groups,name:flousflow_helpdesk.group_helpdesk_user
+msgid "User"
+msgstr "المستخدم"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_flousflow_helpdesk_ticket__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_flousflow_helpdesk_ticket__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصالات الموقع"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+msgid "cancelled"
+msgstr "ملغاة"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+msgid "done"
+msgstr "تم"
+
+#. module: flousflow_helpdesk
+#. odoo-python
+#: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
+msgid "in_progress"
+msgstr "قيد التنفيذ"
