@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Stat button on the customer form: shows maintenance ticket count -->
+    <record id="view_res_partner_form_helpdesk" model="ir.ui.view">
+        <field name="name">res.partner.form.helpdesk</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="%(flousflow_helpdesk.helpdesk_ticket_action)d"
+                        type="action" class="oe_stat_button" icon="fa-wrench">
+                    <field name="maintenance_ticket_count" widget="statinfo"
+                           string="Maintenance"/>
+                </button>
+            </xpath>
+            <xpath expr="//page[@name='sales_purchases']" position="inside">
+                <group string="Maintenance">
+                    <field name="has_maintenance"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Search filter: filter/group customers by maintenance status -->
+    <record id="view_res_partner_search_helpdesk" model="ir.ui.view">
+        <field name="name">res.partner.search.helpdesk</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <filter name="maintenance_customers" string="Maintenance Customers"
+                        domain="[('has_maintenance', '=', True)]"/>
+                <separator/>
+                <filter name="group_maintenance" string="Maintenance"
+                        context="{'group_by': 'has_maintenance'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
