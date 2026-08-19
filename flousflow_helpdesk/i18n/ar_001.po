@@ -997,3 +997,30 @@ msgstr "تم"
 #: code:addons/flousflow_helpdesk/models/helpdesk_ticket.py:0
 msgid "in_progress"
 msgstr "قيد التنفيذ"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_res_partner__helpdesk_ticket_ids
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_res_partner__maintenance_ticket_count
+msgid "Maintenance Tickets"
+msgstr "تذاكر الصيانة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,field_description:flousflow_helpdesk.field_res_partner__has_maintenance
+msgid "Maintenance Customer"
+msgstr "عميل صيانة"
+
+#. module: flousflow_helpdesk
+#: model:ir.model.fields,help:flousflow_helpdesk.field_res_partner__has_maintenance
+msgid "Checked automatically when this customer has at least one maintenance ticket."
+msgstr "يتم تفعيله تلقائيًا عندما يكون لهذا العميل تذكرة صيانة واحدة على الأقل."
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.view_res_partner_search_helpdesk
+msgid "Maintenance Customers"
+msgstr "عملاء الصيانة"
+
+#. module: flousflow_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.view_res_partner_form_helpdesk
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.view_res_partner_search_helpdesk
+msgid "Maintenance"
+msgstr "صيانة"

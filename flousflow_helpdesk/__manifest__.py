@@ -38,6 +38,7 @@ Features:
         'views/repair_order_views.xml',
         'wizards/create_repair_wizard_views.xml',
         'views/helpdesk_menu.xml',
+        'views/res_partner_views.xml',
         'reports/ticket_report.xml',
         'reports/ticket_templates.xml',
         'views/tracking_templates.xml',

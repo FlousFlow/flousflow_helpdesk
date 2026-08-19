@@ -146,6 +146,7 @@
         <field name="res_model">flousflow.helpdesk.ticket</field>
         <field name="view_mode">kanban,list,form</field>
         <field name="search_view_id" ref="helpdesk_ticket_view_search"/>
+        <field name="context">{'search_default_partner_id': active_id}</field>
         <field name="help">Create and manage support tickets. Use the
             "Create Repair" button to link a repair order.</field>
     </record>
