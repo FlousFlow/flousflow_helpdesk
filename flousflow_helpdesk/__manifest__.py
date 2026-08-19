@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Helpdesk (Flous Flow)',
-    'version': '19.0.1.0.0',
+    'version': '18.0.1.0.0',
     'category': 'Services/Helpdesk',
     'summary': 'Manage support tickets and link them to repair orders',
     'description': """

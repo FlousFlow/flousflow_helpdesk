@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Privilege: بيظهر في تبويب صلاحيات الوصول في نموذج المستخدم -->
-    <record model="res.groups.privilege" id="res_groups_privilege_helpdesk">
-        <field name="name">Helpdesk</field>
-        <field name="sequence">10</field>
-        <field name="category_id" ref="base.module_category_services"/>
-    </record>
-
+    <!-- Groups: User + Manager under the Services category (Odoo 18 style) -->
     <record id="group_helpdesk_user" model="res.groups">
         <field name="name">User</field>
-        <field name="sequence">10</field>
-        <field name="privilege_id" ref="flousflow_helpdesk.res_groups_privilege_helpdesk"/>
-        <field name="implied_ids" eval="[Command.link(ref('base.group_user'))]"/>
+        <field name="category_id" ref="base.module_category_services"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
     </record>
 
     <record id="group_helpdesk_manager" model="res.groups">
         <field name="name">Manager</field>
-        <field name="sequence">20</field>
-        <field name="privilege_id" ref="flousflow_helpdesk.res_groups_privilege_helpdesk"/>
-        <field name="implied_ids" eval="[Command.link(ref('flousflow_helpdesk.group_helpdesk_user'))]"/>
+        <field name="category_id" ref="base.module_category_services"/>
+        <field name="implied_ids" eval="[(4, ref('flousflow_helpdesk.group_helpdesk_user'))]"/>
     </record>
 
     <!-- Record rules: عزل متعدد الشركات (قواعد GLOBAL زي نمط repair) -->

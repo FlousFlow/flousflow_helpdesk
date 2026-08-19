@@ -51,7 +51,7 @@ class TestHelpdesk(TransactionCase):
         portal_user = self.env['res.users'].create({
             'name': 'Portal User',
             'login': 'test_portal_user',
-            'group_ids': [(6, 0, [self.env.ref('base.group_portal').id])],
+            'groups_id': [(6, 0, [self.env.ref('base.group_portal').id])],
         })
         with self.assertRaises(Exception):
             self.ticket.with_user(portal_user).read(['name'])
@@ -59,14 +59,14 @@ class TestHelpdesk(TransactionCase):
         internal_user = self.env['res.users'].create({
             'name': 'Internal User',
             'login': 'test_internal_user',
-            'group_ids': [(6, 0, [self.env.ref('base.group_user').id])],
+            'groups_id': [(6, 0, [self.env.ref('base.group_user').id])],
         })
         self.assertTrue(self.ticket.with_user(internal_user).read(['name']))
         # المدير يستطيع تعديل/حذف التذاكر (manager)
         manager_user = self.env['res.users'].create({
             'name': 'Manager User',
             'login': 'test_manager_user',
-            'group_ids': [(6, 0, [
+            'groups_id': [(6, 0, [
                 self.env.ref('base.group_user').id,
                 self.env.ref('flousflow_helpdesk.group_helpdesk_manager').id,
             ])],
