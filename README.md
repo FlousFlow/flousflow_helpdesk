@@ -17,6 +17,9 @@ Features
 * Create a repair order directly from a ticket (linked both ways).
 * Chatter and activities on every ticket.
 * Multi-company record rules.
+* **Maintenance customers**: a customer is automatically flagged as a
+  *Maintenance Customer* as soon as they have at least one ticket, and all
+  their tickets appear in a **Maintenance Tickets** tab on the customer form.
 * Printable ticket (PDF report).
 * Public tracking link (no login) with QR code, so customers can follow
   their repair status.
@@ -47,6 +50,9 @@ Usage
 4. Click **Create Repair** to create a linked ``repair.order`` (customer and
    product are pre-filled from the ticket).
 5. Print the ticket from the **Print** button.
+6. Open a customer record: their tickets show in the **Maintenance Tickets**
+   tab, and you can filter customers by *Maintenance Customers* from the
+   Contacts list search.
 
 License
 -------
