@@ -18,6 +18,21 @@
                     <field name="has_maintenance"/>
                 </group>
             </xpath>
+            <xpath expr="//page[@name='sales_purchases']" position="after">
+                <page string="Maintenance Tickets" name="helpdesk_tickets">
+                    <field name="helpdesk_ticket_ids"
+                           context="{'default_partner_id': id}">
+                        <list>
+                            <field name="name"/>
+                            <field name="state" widget="badge"/>
+                            <field name="team_id" optional="show"/>
+                            <field name="user_id" optional="show"/>
+                            <field name="priority" widget="priority"/>
+                            <field name="repair_id" optional="show"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
         </field>
     </record>
 
