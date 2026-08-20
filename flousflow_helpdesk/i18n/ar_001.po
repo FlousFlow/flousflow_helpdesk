@@ -1001,6 +1001,7 @@ msgstr "قيد التنفيذ"
 #. module: flousflow_helpdesk
 #: model:ir.model.fields,field_description:flousflow_helpdesk.field_res_partner__helpdesk_ticket_ids
 #: model:ir.model.fields,field_description:flousflow_helpdesk.field_res_partner__maintenance_ticket_count
+#: model_terms:ir.ui.view,arch_db:flousflow_helpdesk.view_res_partner_form_helpdesk
 msgid "Maintenance Tickets"
 msgstr "تذاكر الصيانة"
 
